@@ -1,5 +1,17 @@
-# api-todolist-rocketseat
-No curso promovido pela Rocketseat de Java, desenvolvemos juntos uma aplicação Todolist e pude aprimorar meus conhecimentos nas seguintes tecnologias:
+# api-conectagraxa
+Projeto realizado em equipe para a apresentação do demoday do maravilhoso Instituto Proa.
+A conectagraxa é um projeto onde foi colocado muito empenho durante o desenvolvimento do projeto geral, isso desde da idéia sobre oque era e oque seria a conecta graxa até o processo de finalmente desenvolver em código a solução que foi pensanda por uma equipe de 8 pessoas na qual eu era uma delas.
+Tá ok, mas oque é a conecta graxa?
+A conecta graxa é um projeto de um portal de empregabilidade onde visa conectar empresas do setor de shows e eventos aos profissionais da parte técnica de produção de eventos, shows, que são eles: técnicos de som, roadies, técnico de luzes, assistentes de palco, e mais...
+
+Durante o desenvolvimento foram vários desafios enfretados, porém com muita persistência e estudos foram superados, isso desde a ligação do front a api conecta graxa até ao deploy da aplicação,  alguns ainda continua a serem melhorados ou resolvidos. Nosso tabalho mesmo após demoday, continua sendo estudado e em planejamento para constantes revisões e aprimoramentos.
+Foi um trabalho lindo, o qual me sinto extremamente orgulhosa de ter participado , e ainda mais motivada a implementar melhorias e funcionalidades ao projeto.
+#ÉGRAXA.
+
+E não posso deixar de falar sobre o desenvolvimento das habilidades emocionais que foram adquiridas enquanto desenvolvia esse projeto. Foram noites de sono empregadas aqui, noites de toda a equipe que fez parte do projeto, para ser desenvolvido oque nós temos aqui atualmente neste repositório. 
+
+As tecnologias e conhecimentos que foram trabalhadas nesse projeto foram:
+
 
 * Docker
 * Spring Boot 
@@ -7,66 +19,30 @@ No curso promovido pela Rocketseat de Java, desenvolvemos juntos uma aplicação
 * Spring DevTools 
 * ORM JPA (Hibernate)
 * Git
-* Banco de Dados para testes H2 
+* Banco de Dados para testes H2
+* Banco de Dados MySQL
+* Padrão DTO (Data Transfer Objects)
+* Padrão de desenvolvimento API REST 
 * Consumo de API via Postman
 * Framework Lombok Criptografia e descriptografia de senhas com Bcrypt
 * Deploy do serviço na nuvem (Render)
-
-Link da API | https://api-todolist-rocketseat.onrender.com
----|-----------
-
-```POST``` Criando um novo usuário <br/>
- uri: | https://api-todolist-rocketseat.onrender.com/users/
- --|--
- ```
- arquivo JSON
-{
-    "name": "Teste1",
-    "username": "teste1",
-    "password": "123"
-}
-```
-
-```POST``` Criando uma nova tarefa (ativar Auth, type Basic Auth e inserir o username e password): <br/> 
-
- uri: | https://api-todolist-rocketseat.onrender.com/tasks/
- --|--
-
-```
- arquivo JSON
-{
-"description":"Ação para listar tarefas primeiramente",
-"title":"Realização da primeira tarefa dia 14/10/2023",
-"startAt":"2023-10-17T10:00:00",
-"endAt":"2023-10-18T18:50:00",
-"priority":"ALTA",
-"createdAt":"2023-10-14T21:36:00"
-}
-```
-
- ```GET```  Listando todas as tarefas do usuário autenticado (ativar Auth, type Basic Auth e inserir o username e password):  <br/>
-
- uri: | https://api-todolist-rocketseat.onrender.com/tasks/
- --|--
-
-```POST``` Atualização de tarefa (ativar Auth, type Basic Auth e inserir o username e password):  <br/>
-uri: | https://api-todolist-rocketseat.onrender.com/id-da-tarefa-retornada-apos-criacao
---|-- 
-
-Finalizamos o curso com os seguintes itens implementados:
-
-## Tasks
-
-> Create: <br/> criação de tarefa com restrição de quantidade máxima de caracteres no título. Caso a restrição da tabela "task" seja desrespeitada, uma exceção é lançada, a qual personalizamos com a anotação @ExceptionHandler para fornecer um retorno mais amigável ao usuário. Também é gerado automaticamente um ID para cada tarefa, do tipo UUID, que é criptografado para proteger os dados do usuário antes de serem gravados no banco de dados. Além disso, é realizada a verificação se a tarefa é registrada com datas válidas.
-> Update: <br/> é possível atualizar selecionando quais campos desejamos alterar sem modificar o valor da tarefa anterior. Além disso, os usuários também são autenticados, garantindo que apenas o usuário que criou a tarefa possa alterá-la. Caso contrário, é lançada a exceção "usuário não autorizado".
-> List:  <br/>criamos também um método de listagem em que todas as tarefas criadas pelo usuário autenticado e identificado através do nome de usuário e senha são retornadas pela API.
-## Users
-
-> Create: <br/>implementamos a criação de usuários de acordo com o modelo de negócio pensado. Cada usuário possui um ID, nome de usuário, nome, senha e data de criação. Também implementamos uma verificação para evitar que usuários com o mesmo nome de usuário sejam cadastrados, lançando a exceção "Usuário já existe".
-E, finalmente, usamos o Git Bash para fazer o upload do código para o GitHub e, em seguida, fazer o deploy da aplicação na nuvem.
-
- ###### Abaixo imagem da api ativa rodando online
+* Metódologias agéis Scrum utilizando o trello junto ao discord.
 
 
-![render-api-ativa](https://i.postimg.cc/tJ3RSkSB/Captura-de-tela-2023-10-21-223206.png)
-Meus sinceros agradecimentos à grande professora Daniele Leão, que possui uma didática incrível. E também à RocketSeat por tornar possível a produção do curso, que foi muito enriquecedor para mim.
+Integrantes do backend: Suelen Feijó,  Reginaldo Alves, Alexia Melo
+Integrantes do Frontend: Leandro Marques, Lívia Gomes, Matheus Gomes, Maria Clara Mendoça, Naiury Dutra
+Integrantes do time de dados: Suelen Feijó
+
+Agradecimentos:
+
+Nessa parte, eu quero deixar aqui registrado o meu carinho e amor pelo Instituto Proa, e os agradecimentos ao Senac por juntos ter tornado isso possível.
+
+A conecta graxa também não seria possível se não tivesse a especial, amada e querida Nívia Dias (mais conhecidas entre os proanes como tia Ní.) , agradeço por todo o suporte, atenção, carinho, disponibilidade, paciência , e tempo dedicado aos proanes da turma 2023 de recife, e a mim <3 
+
+Ao queridíssimo Carlos Celestino , esse aqui também existe uma admiração incrível , isso pelo ser humano e professor que ele é. Por passar os conhecimentos , os ensinamentos tão necessários na vida de um estudante dev , e até mesmo os conselhos a serem levados pra vida. Grande Professor Carlão! 
+
+Sem esquecer também da nossa professora maravilhosa que tivemos a honra de ter também os conhecimentos, dela , Pâmella  Oliveira, grande professora e uma pessoa de extrema sensibilidade conosco. Pude aprender sobre spring boot, java, thymeleaf , banco de dados, tudo com ela. Professora e pessoa extraordinária. 
+
+Também não posso deixar de citar, uma que admiro muito, e também me ensinou muito sobre html, css, bootstrap, e ótimas dicas de programação e java, Marta Roberta! Por nós proanes apelidada carinhosamente de Martinha <3 , um grande exemplo de pessoa e lecionadora.
+
+Aos outros professores, e amigos, aos proanes parceiros de turma ,quero também deixar explícito meu carinho e admiração por cada um. Foi um prazer enorme essa jornada que durou 6 meses junto de todos vocês.
