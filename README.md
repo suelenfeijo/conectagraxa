@@ -1,5 +1,5 @@
 # api-conectagraxa
-###Projeto em revisão
+### Projeto em revisão
 Projeto realizado em equipe para a apresentação do demoday do maravilhoso Instituto Proa.
 A conectagraxa é um projeto onde foi colocado muito empenho durante o desenvolvimento do projeto geral, isso desde da idéia sobre oque era e oque seria a conecta graxa até o processo de finalmente desenvolver em código a solução que foi pensanda por uma equipe de 8 pessoas na qual eu era uma delas.
 Tá ok, mas oque é a conecta graxa?
